@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Clarity City", sans-serif;
+    background-color: #071c24;
+    color: white;
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+header {
+    width: 100%;
+    background-color: #082832;
+}
+.menu {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-family: "Trade Winds", cursive;
+    font-size: 28px;
+    color: #fac23c;
+}
+.logoFilme{
+    display: flex;
+    align-self: center;
+    height: 50px;
+}
+.links {
+    display: flex;
+    gap: 35px;
+}
+.links a {
+    font-weight: 600;
+    transition: 0.3s;
+}
+.links a:hover {
+    color: #fac23c;
+}
+.inicio {
+    min-height: calc(100vh - 130px);
+    display: flex;
+    align-items: center;
+}
+.hero {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 70px;
+    align-items: center;
+}
+.poster {
+    width: 100%;
+    height: 540px;
+    background-color: #123b47;
+    border: 3px solid #2596be;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.subtitulo {
+    color: #fac23c;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+.hero h1 {
+    font-family: "Trade Winds", cursive;
+    font-size: clamp(45px, 6vw, 80px);
+    color: #2596be;
+    line-height: 1;
+}
+.hero h1 span {
+    display: block;
+    font-family: "Clarity City", sans-serif;
+    font-size: 22px;
+    color: #fac23c;
+    letter-spacing: 4px;
+    margin-top: 15px;
+}
+.descricao {
+    max-width: 600px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+.countdown {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.tempo {
+    min-width: 85px;
+    text-align: center;
+    background-color: #0d3440;
+    border: 2px solid #e46107;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+.tempo span {
+    display: block;
+    font-size: 35px;
+    font-weight: 800;
+    color: #fac23c;
+}
+.tempo small {
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+.separador {
+    font-size: 30px;
+    color: #e46107;
+}
+.mensagem-contagem {
+    margin-top: 20px;
+    color: #fac23c;
+    font-weight: bold;
+}
+.botao {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background-color: #e46107;
+    color: white;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.botao:hover {
+    background-color: #fac23c;
+    color: #071c24;
+    transform: translateY(-3px);
+}
+.titulo-pagina {
+    text-align: center;
+    padding: 80px 20px 50px;
+}
+.titulo-pagina h1 {
+    font-family: "Trade Winds", cursive;
+    font-size: 55px;
+    color: #2596be;
+    margin-bottom: 20px;
+}
+.titulo-pagina p:last-child {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+}
+.pagina-filme {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.sobre-filme {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.imagem-filme {
+    height: 450px;
+    background-color: #123b47;
+    border: 3px solid #2596be;
+    overflow: hidden;
+}
+.imagem-filme img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.texto-filme h2 {
+    color: #fac23c;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+.texto-filme p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.personagens {
+    margin-bottom: 100px;
+}
+.personagens h2,
+.elementos h2 {
+    font-family: "Trade Winds", cursive;
+    color: #2596be;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.card {
+    background-color: #0d3440;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #e46107;
+}
+.card-imagem {
+    height: 250px;
+    background-color: #123b47;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.card-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card h3 {
+    color: #fac23c;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+.elementos {
+    margin-bottom: 100px;
+}
+
+.elementos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.elemento {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #0d3440;
+    border: 2px solid #2596be;
+}
+
+.elemento h3 {
+    font-family: "Trade Winds", cursive;
+    color: #fac23c;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.elemento p {
+    line-height: 1.5;
+}
+
+.pagina-contato {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.formulario-container {
+    background-color: #0d3440;
+    padding: 40px;
+    margin-bottom: 80px;
+    border-top: 4px solid #e46107;
+}
+
+.campo {
+    margin-bottom: 25px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #fac23c;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #2596be;
+    background-color: #071c24;
+    color: white;
+    font-family: "Clarity City", sans-serif;
+    font-size: 15px;
+    outline: none;
+    border-radius: 10px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #fac23c;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+#mensagem-ticket {
+    margin-top: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media (max-width: 850px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 40px;
+
+        padding: 50px 0;
+    }
+
+    .poster {
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .countdown {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .sobre-filme {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .elementos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+
+        padding: 20px 0;
+    }
+
+    .links {
+        gap: 15px;
+
+        font-size: 14px;
+    }
+
+    .tempo {
+        min-width: 65px;
+    }
+
+    .tempo span {
+        font-size: 25px;
+    }
+
+    .elementos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario-container {
+        padding: 25px;
+    }
+
+}
